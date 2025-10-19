@@ -4,7 +4,7 @@ from google import genai
 from google.genai import types
 from pymongo import MongoClient
 
-uri = "mongodb+srv://nayanjithajith_db_user:nayanjith%408831@cluster0.tx2dkmn.mongodb.net/medicaredb?retryWrites=true&w=majority"
+uri = <INSER_YOUR_MONGODB_URI>
 client = MongoClient(uri)
 db = client["medicaredb"]
 collection = db["Patients"]
@@ -59,7 +59,7 @@ def search(name: str, age: int):
 def generate(user_input: str):
     global memory
     client = genai.Client(
-        api_key="AIzaSyB_S6bvUxuRIWo7fPloXh12IS6tw5lv89Q"
+        api_key= <INSERT_YOUR_GEMEINI_API_KEY>
     )
 
     model = "gemini-flash-latest"
