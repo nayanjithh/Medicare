@@ -6,7 +6,7 @@ from google.genai import types
 
 def generate(input):
     client = genai.Client(
-        api_key="AIzaSyB_S6bvUxuRIWo7fPloXh12IS6tw5lv89Q",
+        api_key= <INSERT_YOUR_GEMEINI_API_KEY>,
     )
 
     model = "gemini-flash-latest"
